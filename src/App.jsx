@@ -9,8 +9,10 @@ const Contenedor = styled.div`
   max-width: 900px;
   margin: 0px auto;
   width: 90%;
-  margin-top: 30px;
+  margin-bottom: 20px;
+  
   @media (min-width: 992px) {
+    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
@@ -22,6 +24,9 @@ const Imagen = styled.img`
   width: 80%;
   display: block;
   margin: 100px auto 0 auto;
+  @media (max-width: 600px) {
+    margin: 20px auto 0 auto;
+  }
 `;
 
 const Heading = styled.h1`
